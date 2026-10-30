@@ -45,6 +45,7 @@ https://y.demo.lhyang.org/https://www.google.com/maps
 
 # 快速开始
 * 在 1.4 版本后启动了默认[安全密码](#安全密码)，默认密码为 `123`，感谢 <ruby>Bolster<rp>（</rp><rt>da sha bi</rt><rp>）</rp></ruby> 给我整不会了。
+* 再次提醒，我强烈建议开启密码，如果关闭密码，不仅会被限速，而且你将会和我一样，天天被 UserAgent: Bot* 轰炸，两三天一封侵权邮件，Google 反钓鱼发邮件，一堆莫名其妙的 SEO 砖家发邮件……
 
 ![bolster](https://github.com/1234567Yang/cf-proxy-ex/blob/main/img/depoly/abuse_report.png)
 
@@ -61,6 +62,9 @@ https://y.demo.lhyang.org/https://www.google.com/maps
 
 > [!NOTE]  
 > 如果部署失败（重定向、报错 等），请参考 [FAQ](FAQ.md)
+
+> [!NOTE]  
+> 如果传输缓慢，疑似出现限速，请参考 [speedlimited](speedlimited.md)
 
 # 安全密码
 安全密码利用Cookie，在设置了密码的情况下，会先检测是否有密码Cookie以及是否正确，如果不正确那么可以设置输入密码界面，或者直接403。密码Cookie默认名称为`passwordCookieName`，设置密码可以代码里搜索`const password = "";`并替换成你的密码。
